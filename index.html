@@ -19,6 +19,7 @@
   </head>
 
   <body>
+    <!-- Header -->
     <header class="header">
       <div class="container header-container">
         <a href="" class="logo">
@@ -31,7 +32,13 @@
           </span>
         </a>
 
-        <nav>
+        <button class="header-mobile-menu">
+          <svg class="header-menu-icon" height="28" width="28">
+            <use href="./images/icons.svg#icon-mobile-menu"></use>
+          </svg>
+        </button>
+
+        <nav class="header-nav">
           <ul class="header-nav-list">
             <li class="header-nav-item">
               <a href="./index.html" class="header-nav-link">Home</a>
@@ -64,9 +71,50 @@
       </div>
     </header>
 
+    <div class="mobile-menu-overlay">
+      <div class="mobile-menu">
+        <button type="button" class="mob-menu-btn-close">
+          <svg class="mob-menu-close-icon" height="28" width="28">
+            <use href="./images/icons.svg#icon-btn-close"></use>
+          </svg>
+        </button>
+
+        <nav class="mob-menu-nav">
+          <ul class="mob-menu-nav-list">
+            <li class="mob-menu-nav-list">
+              <a class="mob-menu-nav-link current" href="">Home</a>
+            </li>
+            <li class="mob-menu-nav-list">
+              <a class="mob-menu-nav-link" href="">How it's made?</a>
+            </li>
+            <li class="mob-menu-nav-list">
+              <a class="mob-menu-nav-link" href="">Chocolate is loved</a>
+            </li>
+          </ul>
+        </nav>
+
+        <ul class="mob-menu-social-list">
+          <li class="mob-menu-social-item">
+            <a class="mob-menu-social-link" href="">
+              <svg class="mob-menu-social-icon" height="22" width="22">
+                <use href="./images/icons.svg#icon-instagram"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="mob-menu-social-item">
+            <a class="mob-menu-social-link" href="">
+              <svg class="mob-menu-social-icon" height="22" width="22">
+                <use href="./images/icons.svg#icon-twitter"></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+
     <main>
       <!-- hero -->
-      <section class="hero">
+      <section class="hero hidden">
         <div class="container hero-container">
           <h1 class="hero-title">
             Treat yourself or a loved one to our finest ingredients for a moment
@@ -90,7 +138,7 @@
       </section>
 
       <!-- Goals -->
-      <section class="goals-section">
+      <section class="goals-section hidden">
         <div class="container goals-container">
           <h2 class="visually-hidden">Goals</h2>
 
@@ -146,7 +194,7 @@
       </section>
 
       <!-- Products -->
-      <section class="products-section">
+      <section class="products-section hidden">
         <div class="container">
           <h2 class="products-title">
             IT ALL ADDS UP TO ONE EXCEPTIONAL
@@ -171,6 +219,26 @@
                   width="206"
                 />
                 <h3 class="products-list-title">mILK CHOCOLATE</h3>
+                <div class="overlay">
+                  <h4 class="overlay-title">Milk chocolate</h4>
+
+                  <ul class="overlay-tags-list">
+                    <li class="overlay-tags-item">
+                      <p class="overlay-tags-text">chocolate</p>
+                    </li>
+                    <li class="overlay-tags-item">
+                      <p class="overlay-tags-text">the benefits</p>
+                    </li>
+                  </ul>
+
+                  <p class="overlay-description">
+                    Milk chocolate is a solid chocolate confectionery containing
+                    cocoa, sugar and milk. It is the most consumed type of
+                    chocolate. Chocolate was originally sold and consumed as a
+                    beverage in pre-Columbian times. Although four-fifths of all
+                    milk chocolate is sold in the United States and Europe.
+                  </p>
+                </div>
               </div>
             </li>
             <li class="products-list-item">
@@ -183,6 +251,26 @@
                   width="206"
                 />
                 <h3 class="products-list-title">Milk</h3>
+                <div class="overlay">
+                  <h4 class="overlay-title">Milk</h4>
+
+                  <ul class="overlay-tags-list">
+                    <li class="overlay-tags-item">
+                      <p class="overlay-tags-text">milk</p>
+                    </li>
+                    <li class="overlay-tags-item">
+                      <p class="overlay-tags-text">the benefits</p>
+                    </li>
+                  </ul>
+
+                  <p class="overlay-description">
+                    Milk is a white liquid food produced by the mammary glands
+                    of mammals. It is the primary source of nutrition for young
+                    mammals (including breastfed human infants) before they are
+                    able to digest solid food.Early-lactation milk, which is
+                    called colostrum, contains...
+                  </p>
+                </div>
               </div>
             </li>
             <li class="products-list-item">
@@ -195,6 +283,26 @@
                   width="206"
                 />
                 <h3 class="products-list-title">nuts</h3>
+                <div class="overlay">
+                  <h4 class="overlay-title">Nuts</h4>
+
+                  <ul class="overlay-tags-list">
+                    <li class="overlay-tags-item">
+                      <p class="overlay-tags-text">nuts</p>
+                    </li>
+                    <li class="overlay-tags-item">
+                      <p class="overlay-tags-text">the benefits</p>
+                    </li>
+                  </ul>
+
+                  <p class="overlay-description">
+                    Almonds, pistachios, and walnuts are some types of nuts that
+                    contain healthy nutrients. When eaten as part of a
+                    nutrient-dense diet, these 9 nuts may offer benefits such as
+                    reducing your risk of heart disease. They’re a good source
+                    of fiber, healthy fats, and plant protein. Plus, they’re...
+                  </p>
+                </div>
               </div>
             </li>
             <li class="products-list-item">
@@ -207,6 +315,25 @@
                   width="206"
                 />
                 <h3 class="products-list-title">SEMI - SWEET CHOCOLATE</h3>
+                <div class="overlay">
+                  <h4 class="overlay-title">semi - sweet chocolate</h4>
+
+                  <ul class="overlay-tags-list">
+                    <li class="overlay-tags-item">
+                      <p class="overlay-tags-text">sweet chocolate</p>
+                    </li>
+                    <li class="overlay-tags-item">
+                      <p class="overlay-tags-text">the benefits</p>
+                    </li>
+                  </ul>
+
+                  <p class="overlay-description">
+                    Semi-sweet chocolate has a cocoa solid content of 35 to 65%.
+                    One of the best ways to gain an understanding of this type
+                    of chocolate is to compare it to a different type of
+                    chocolate. Semisweet is darker than milk...
+                  </p>
+                </div>
               </div>
             </li>
           </ul>
@@ -214,7 +341,7 @@
       </section>
 
       <!-- How it's made? -->
-      <section class="made-section">
+      <section class="made-section hidden">
         <div class="container">
           <h2 class="made-title">
             hOW IT’S <span class="orange-span">made?</span>
@@ -266,7 +393,7 @@
       </section>
 
       <!-- Feedback -->
-      <section class="feedback-section">
+      <section class="feedback-section hidden">
         <div class="container feedback-container">
           <h2 class="feedback-title">
             <span class="orange-span">chocolate</span> is loved
@@ -318,7 +445,8 @@
       </section>
     </main>
 
-    <footer class="footer-container">
+    <!-- Footer -->
+    <footer class="footer-container hidden">
       <div class="container">
         <div class="footer-address-wrap">
           <h2 class="footer-title">
@@ -377,5 +505,89 @@
         </div>
       </div>
     </footer>
+
+    <!-- Modal -->
+    <div class="modal-overlay hidden">
+      <div class="modal">
+        <button class="modal-close-btn" type="button">
+          <svg class="modal-close-icon" height="28" width="28">
+            <use href="./images/icons.svg#icon-btn-close"></use>
+          </svg>
+        </button>
+
+        <p class="modal-text">
+          LEAVE A REVIEW ABOUT <span class="orange-span">OUR CHOCOLATE</span>
+        </p>
+
+        <form class="modal-form">
+          <div class="modal-container">
+            <label class="modal-label" for="user-name">Name</label>
+            <div class="modal-input-wrap">
+              <input
+                class="modal-input"
+                type="text"
+                name="user-name"
+                id="user-name"
+              />
+              <svg class="modal-input-icon" height="24" width="24">
+                <use href="./images/icons.svg#icon-user"></use>
+              </svg>
+            </div>
+          </div>
+
+          <div class="modal-container">
+            <label class="modal-label" for="modal-email">Email</label>
+            <div class="modal-input-wrap">
+              <input class="modal-input" name="modal-email" id="modal-email" />
+              <svg class="modal-input-icon" height="24" width="24">
+                <use href="./images/icons.svg#icon-mail"></use>
+              </svg>
+            </div>
+          </div>
+
+          <div class="modal-container">
+            <label class="modal-label" for="modal-phone">Phone number</label>
+            <div class="modal-input-wrap">
+              <input class="modal-input" name="modal-phone" id="modal-phone" />
+              <svg class="modal-input-icon" height="24" width="24">
+                <use href="./images/icons.svg#icon-phone"></use>
+              </svg>
+            </div>
+          </div>
+
+          <div class="modal-container modal-textarea-container">
+            <label class="modal-label" for="modal-comment">Comment</label>
+            <textarea
+              class="modal-textarea"
+              name="modal-comment"
+              name="modal-comment"
+              id="modal-comment"
+              placeholder="Enter text"
+            ></textarea>
+          </div>
+
+          <div class="modal-checkbox-container">
+            <input
+              class="modal-checkbox-input visually-hidden"
+              type="checkbox"
+              class="modal-privacy"
+              value="true"
+              id="user-privacy"
+            />
+            <label for="user-privacy" class="modal-check-label">
+              <span class="modal-check">
+                <svg class="modal-check-icon" height="10" width="10">
+                  <use href="./images/icons.svg#icon-check"></use>
+                </svg>
+              </span>
+              I accept the terms and conditions of the
+              <a class="privacy-policy-link" href=""> Privacy Policy</a>
+            </label>
+          </div>
+
+          <button class="modal-send-btn" type="button">Send</button>
+        </form>
+      </div>
+    </div>
   </body>
 </html>
